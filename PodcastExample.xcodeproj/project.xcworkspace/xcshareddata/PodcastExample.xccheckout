@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>62EADD00-D37F-42CA-9FA9-CF2C1D7B3AB7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PodcastExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C9C3B97A-3E7A-4CA7-AB02-9721BFA9948E</key>
+		<string>ssh://github.com/SmiThUa/iOS-testwork.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PodcastExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C9C3B97A-3E7A-4CA7-AB02-9721BFA9948E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/SmiThUa/iOS-testwork.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C9C3B97A-3E7A-4CA7-AB02-9721BFA9948E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C9C3B97A-3E7A-4CA7-AB02-9721BFA9948E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Podcast-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

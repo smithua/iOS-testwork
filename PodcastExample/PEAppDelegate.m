@@ -7,11 +7,44 @@
 //
 
 #import "PEAppDelegate.h"
+#import "FMDatabase.h"
 
 @implementation PEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    NSString *databaseTargetPath = [path stringByAppendingPathComponent:@"podcast.sqlite"];
+    
+    NSString *databaseFromResource = [[NSBundle mainBundle] pathForResource:@"podcast" ofType:@"sqlite"];
+    
+    NSString *resources = [[NSBundle mainBundle] pathForResource:@"podcast" ofType:@"sqlite"];
+    
+    BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:databaseTargetPath];
+    
+    if (!fileExist)
+    {
+        [[NSFileManager defaultManager] copyItemAtPath:databaseFromResource toPath:databaseTargetPath error:nil];
+    }
+     
+    FMDatabase *db = [FMDatabase databaseWithPath:databaseTargetPath];
+    
+    if (![db open]) {
+        return YES;
+    }
+    
+    [db executeUpdate:@"INSERT INTO podcast VALUES(:url, :name, :artwork_url)" withParameterDictionary:@{@"url:"@"hfadf://url"@"name":@"coolName",@"artwork_url":@"lol",@"id":@1}];
+
+    NSLog(@"%@", [db lastErrorMessage]);
+    //FMResultSet *s = [db exe]
+    
+    
+    
+    [db close];
+     
+    
+    
     UIImage *navBackgroundImage = [UIImage imageNamed:@"nav_pattern.png"];
     [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
     
