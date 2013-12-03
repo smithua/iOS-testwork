@@ -60,7 +60,6 @@
                     <navigationItem key="navigationItem" title="Podcast" id="jWS-Bl-F0Y">
                         <barButtonItem key="backBarButtonItem" title="Back" id="oTa-4i-bsz"/>
                     </navigationItem>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="6eA-BS-mWH" id="Um4-Xp-RlV"/>
@@ -82,7 +81,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlightedImage="image_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="kCW-vf-0lu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCW-vf-0lu">
                                 <rect key="frame" x="29" y="88" width="262" height="242"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -137,7 +136,6 @@
                         <color key="backgroundColor" red="0.74354272959183676" green="0.74354272959183676" blue="0.74354272959183676" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="DFn-Wj-Zs2"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="imageAlbumView" destination="kCW-vf-0lu" id="blM-GR-BML"/>
@@ -152,7 +150,6 @@
         <scene sceneID="8zF-R5-4Ea">
             <objects>
                 <navigationController definesPresentationContext="YES" id="iJr-YL-0Kx" sceneMemberID="viewController">
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kzz-xR-pqB">
                         <autoresizingMask key="autoresizingMask"/>
@@ -167,7 +164,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image_border.png" width="572" height="571"/>
         <image name="pause_button.png" width="105" height="105"/>
         <image name="prev_button.png" width="105" height="105"/>
         <image name="seeker.png" width="32" height="32"/>
